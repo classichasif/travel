@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travel Agency || TBD</title>
+        <!-- font -->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- link shortcut -->
+        <link rel="shortcut icon" href="assets/image/favicon.png" type="image/x-icon">
+        <!-- bootstarp link -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- css file link -->
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    
+    <body>
+        <!-- header section -->
+        <header class="header_section">
+            <!-- header top -->
+            <div class="header_top py-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <!-- header info -->
+                        <div class="header_info">
+                            <ul class="d-flex flex-wrap gap-4">
+                                <li class="d-flex align-items-center gap-2">
+                                    <span class="header_iconbox"><i class="fa-solid fa-mobile"></i></span>
+                                    <a class="header_info_text" href="tel:01752968542">01752968542</a>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <span class="header_iconbox"><i class="fa-solid fa-envelope"></i></span>
+                                    <a class="header_info_text" href="mailto:info@gmail.com">info@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top_header_right d-flex justify-content-sm-end align-items-center gap-3">
+                            <!-- multilanguage -->
+                            <div class="multi_language dropdown d-flex">
+                                <button class="global_btn rounded-circle" data-bs-toggle="dropdown">
+                                    <div class="lang_btn d-flex gap-2">
+                                        <!-- flag -->
+                                        <div class="language_flag">
+                                            <img src="assets/image/flag/us.svg" alt="flag">
+                                        </div>
+                                        <!-- text -->
+                                        <p class="language_text_select">English</p>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu langList_dropdow py-2">
+                                    <ul>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/china.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">China</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/us.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">USA</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/french.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">France</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/germany.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Germany</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/italy.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Italy</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/russia.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Russia</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/spain.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Spain</p>
+                                        </li>
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/sa.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Arabic</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- login button -->
+                            <div class="header_login">
+                                <a href="./login" class="main_btn">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header -->
+            <div class="main_header py-2">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <!-- header logo -->
+                        <div class="header_logo">
+                            <a href="">
+                                <img src="assets/image/logo.png" alt="">
+                            </a>
+                        </div>
+                        <!-- header nav -->
+                        <div class="header_nav">
+                            <!-- nav wrapper -->
+                            <ul class="header_nav_list">
+                                <!-- nav item -->
+                                <li class="header_nav_item">
+                                    <a href="" class="header_nav_link">
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <!-- nav item -->
+                                <li class="header_nav_item">
+                                    <a href="" class="header_nav_link">
+                                        <span>Our Service</span>
+                                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </a>
+                                </li>
+                                <!-- nav item -->
+                                <li class="header_nav_item">
+                                    <a href="" class="header_nav_link">
+                                        <span>Tour Package</span>
+                                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                                    </a>
+                                </li>
+                                <!-- nav item -->
+                                <li class="header_nav_item">
+                                    <a href="" class="header_nav_link">
+                                        <span>Visa Info</span>
+                                    </a>
+                                </li>
+                                <!-- nav item -->
+                                <li class="header_nav_item">
+                                    <a href="" class="header_nav_link">
+                                        <span>All Package</span>
+                                    </a>
+                                </li>
+                                <!-- nav item -->
+                                <li class="header_contact">
+                                    <a href="" class="main_btn">
+                                        <span>Contact</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header section end -->
+
+        <!-- main -->
+        <main class="main">
+            <!-- banner section -->
+            <section class="banner_section">
+                <div class="container">
+                    <div class="banner_content">
+                        <h1 class="banner_heading">Your kind of holiday, Top Urban Destinations</h1>
+                        <p class="banner_text">A modern and beautiful WordPress theme for all kinds of travel and tourism busines. WordPress theme for all kinds of travel and tourism.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- banner section end -->
+
+            <!-- search form -->
+            <section class="search_form section_padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="theme_search_form_area">
+                                <div class="theme_search_form_tabbtn">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights" type="button" role="tab" aria-controls="flights" aria-selected="true"><i class="fas fa-plane-departure"></i>Flights</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours" type="button" role="tab" aria-controls="tours" aria-selected="false"><i class="fas fa-globe"></i>Tours</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels" type="button" role="tab" aria-controls="hotels" aria-selected="false"><i class="fas fa-hotel"></i>Hotels</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="visa-tab" data-bs-toggle="tab" data-bs-target="#visa-application" type="button" role="tab" aria-controls="visa" aria-selected="false"><i class="fas fa-passport"></i> Visa</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="apartments-tab" data-bs-toggle="tab" data-bs-target="#apartments" type="button" role="tab" aria-controls="apartments" aria-selected="false"><i class="fas fa-building"></i> Apartments</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="bus-tab" data-bs-toggle="tab" data-bs-target="#bus" type="button" role="tab" aria-controls="bus" aria-selected="false"><i class="fas fa-bus"></i> Bus</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="cruise-tab" data-bs-toggle="tab" data-bs-target="#cruise" type="button" role="tab" aria-controls="cruise" aria-selected="false"><i class="fas fa-ship"></i> Cruise</button>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade active show" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="flight_categories_search">
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="oneway-tab" data-bs-toggle="tab" data-bs-target="#oneway_flight" type="button" role="tab" aria-controls="oneway_flight" aria-selected="true">One
+                                                                Way</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="roundtrip-tab" data-bs-toggle="tab" data-bs-target="#roundtrip" type="button" role="tab" aria-controls="roundtrip" aria-selected="false">Roundtrip</button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="multi_city-tab" data-bs-toggle="tab" data-bs-target="#multi_city" type="button" role="tab" aria-controls="multi_city" aria-selected="false">Multi
+                                                                city</button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content" id="myTabContent1">
+                                            <div class="tab-pane fade show active" id="oneway_flight" role="tabpanel" aria-labelledby="oneway-tab">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="oneway_search_form">
+                                                            <form action="#!">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed">
+                                                                            <p>From</p>
+                                                                            <input type="text" value="New York">
+                                                                            <span>JFK - John F. Kennedy International...</span>
+                                                                            <div class="plan_icon_posation">
+                                                                                <i class="fas fa-plane-departure"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed">
+                                                                            <p>To</p>
+                                                                            <input type="text" value="London ">
+                                                                            <span>LCY, London city airport </span>
+                                                                            <div class="plan_icon_posation">
+                                                                                <i class="fas fa-plane-arrival"></i>
+                                                                            </div>
+                                                                            <div class="range_plan">
+                                                                                <i class="fas fa-exchange-alt"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4  col-md-6 col-sm-12 col-12">
+                                                                        <div class="form_search_date">
+                                                                            <div class="flight_Search_boxed date_flex_area">
+                                                                                <div class="Journey_date">
+                                                                                    <p>Journey date</p>
+                                                                                    <input type="date" value="2022-05-05">
+                                                                                    <span>Thursday</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                            <p>Passenger, Class </p>
+                                                                            <!-- select passenger -->
+                                                                            <select name="" id="">
+                                                                                <option value="" selected hidden>Select...</option>
+                                                                                <option value="">1</option>
+                                                                                <option value="">2</option>
+                                                                                <option value="">3</option>
+                                                                                <option value="">4</option>
+                                                                                <option value="">5</option>
+                                                                            </select>
+                                                                            <span>Business</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="top_form_search_button">
+                                                                        <button class="btn btn_theme btn_md">Search</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="roundtrip" role="tabpanel" aria-labelledby="roundtrip-tab">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="oneway_search_form">
+                                                            <form action="#!">
+                                                                <div class="row">
+                                                                    <div class="col-lg-3  col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed">
+                                                                            <p>From</p>
+                                                                            <input type="text" value="New York">
+                                                                            <span>JFK - John F. Kennedy International...</span>
+                                                                            <div class="plan_icon_posation">
+                                                                                <i class="fas fa-plane-departure"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3  col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed">
+                                                                            <p>To</p>
+                                                                            <input type="text" value="London ">
+                                                                            <span>LCY, London city airport </span>
+                                                                            <div class="plan_icon_posation">
+                                                                                <i class="fas fa-plane-arrival"></i>
+                                                                            </div>
+                                                                            <div class="range_plan">
+                                                                                <i class="fas fa-exchange-alt"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-4  col-md-6 col-sm-12 col-12">
+                                                                        <div class="form_search_date">
+                                                                            <div class="flight_Search_boxed date_flex_area">
+                                                                                <div class="Journey_date">
+                                                                                    <p>Journey date</p>
+                                                                                    <input type="date" value="2022-05-05">
+                                                                                    <span>Thursday</span>
+                                                                                </div>
+                                                                                <div class="Journey_date">
+                                                                                    <p>Return date</p>
+                                                                                    <input type="date" value="2022-05-08">
+                                                                                    <span>Saturday</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                        <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                            <p>Passenger, Class </p>
+                                                                            <select name="" id="">
+                                                                                <option value="" selected hidden>Select...</option>
+                                                                                <option value="">1</option>
+                                                                                <option value="">2</option>
+                                                                                <option value="">3</option>
+                                                                                <option value="">4</option>
+                                                                                <option value="">5</option>
+                                                                            </select>
+                                                                            <span>Business</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="top_form_search_button">
+                                                                    <button class="btn btn_theme btn_md">Search</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="multi_city" role="tabpanel" aria-labelledby="multi_city-tab">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="oneway_search_form">
+                                                            <form action="#!">
+                                                                <div class="multi_city_form_wrapper">
+                                                                    <div class="multi_city_form">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed">
+                                                                                    <p>From</p>
+                                                                                    <input type="text" value="New York">
+                                                                                    <span>DAC, Hazrat Shahajalal
+                                                                                        International...</span>
+                                                                                    <div class="plan_icon_posation">
+                                                                                        <i class="fas fa-plane-departure"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed">
+                                                                                    <p>To</p>
+                                                                                    <input type="text" value="London ">
+                                                                                    <span>LCY, London city airport </span>
+                                                                                    <div class="plan_icon_posation">
+                                                                                        <i class="fas fa-plane-arrival"></i>
+                                                                                    </div>
+                                                                                    <div class="range_plan">
+                                                                                        <i class="fas fa-exchange-alt"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                                <div class="form_search_date">
+                                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                                        <div class="Journey_date">
+                                                                                            <p>Journey date</p>
+                                                                                            <input type="date" value="2022-05-05">
+                                                                                            <span>Thursday</span>
+                                                                                        </div>
+                                                                                        <div class="Journey_date">
+                                                                                            <p>Return date</p>
+                                                                                            <input type="date" value="2022-05-10">
+                                                                                            <span>Saturday</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                                    <p>Passenger, Class </p>
+                                                                                    <select name="" id="">
+                                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                                        <option value="">1</option>
+                                                                                        <option value="">2</option>
+                                                                                        <option value="">3</option>
+                                                                                        <option value="">4</option>
+                                                                                        <option value="">5</option>
+                                                                                    </select>
+                                                                                    <span>Business</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="multi_city_form">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed">
+                                                                                    <p>From</p>
+                                                                                    <input type="text" value="New York">
+                                                                                    <span>DAC, Hazrat Shahajalal
+                                                                                        International...</span>
+                                                                                    <div class="plan_icon_posation">
+                                                                                        <i class="fas fa-plane-departure"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed">
+                                                                                    <p>To</p>
+                                                                                    <input type="text" value="London ">
+                                                                                    <span>LCY, London city airport </span>
+                                                                                    <div class="plan_icon_posation">
+                                                                                        <i class="fas fa-plane-arrival"></i>
+                                                                                    </div>
+                                                                                    <div class="range_plan">
+                                                                                        <i class="fas fa-exchange-alt"></i>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                                <div class="form_search_date">
+                                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                                        <div class="Journey_date">
+                                                                                            <p>Journey date</p>
+                                                                                            <input type="date" value="2022-05-05">
+                                                                                            <span>Thursday</span>
+                                                                                        </div>
+                                                                                        <div class="Journey_date">
+                                                                                            <p>Return date</p>
+                                                                                            <input type="date" value="2022-05-12">
+                                                                                            <span>Saturday</span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                                    <p>Passenger, Class </p>
+                                                                                    <select name="" id="">
+                                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                                        <option value="">1</option>
+                                                                                        <option value="">2</option>
+                                                                                        <option value="">3</option>
+                                                                                        <option value="">4</option>
+                                                                                        <option value="">5</option>
+                                                                                    </select> 
+                                                                                    <span>Business</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="add_multy_form">
+                                                                            <button type="button" id="addMulticityRow">+ Add
+                                                                                another
+                                                                                flight</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="top_form_search_button">
+                                                                    <button class="btn btn_theme btn_md">Search</button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="tours" role="tabpanel" aria-labelledby="tours-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Destination</p>
+                                                                    <input type="text" placeholder="Where are you going?">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                <div class="form_search_date">
+                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                        <div class="Journey_date">
+                                                                            <p>Journey date</p>
+                                                                            <input type="date" value="2022-05-03">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                        <div class="Journey_date">
+                                                                            <p>Return date</p>
+                                                                            <input type="date" value="2022-05-05">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                    <p>Passenger, Class </p>
+                                                                    <select name="" id="">
+                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                        <option value="">1</option>
+                                                                        <option value="">2</option>
+                                                                        <option value="">3</option>
+                                                                        <option value="">4</option>
+                                                                        <option value="">5</option>
+                                                                    </select> 
+                                                                    <span>Business</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="top_form_search_button">
+                                                                <button class="btn btn_theme btn_md">Search</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="hotels" role="tabpanel" aria-labelledby="hotels-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Destination</p>
+                                                                    <input type="text" placeholder="Where are you going?">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                <div class="form_search_date">
+                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                        <div class="Journey_date">
+                                                                            <p>Journey date</p>
+                                                                            <input type="date" value="2022-05-03">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                        <div class="Journey_date">
+                                                                            <p>Return date</p>
+                                                                            <input type="date" value="2022-05-05">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                    <p>Passenger, Class </p>
+                                                                    <select name="" id="">
+                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                        <option value="">1</option>
+                                                                        <option value="">2</option>
+                                                                        <option value="">3</option>
+                                                                        <option value="">4</option>
+                                                                        <option value="">5</option>
+                                                                    </select> 
+                                                                    <span>Business</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="top_form_search_button">
+                                                                <button class="btn btn_theme btn_md">Search</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="visa-application" role="tabpanel" aria-labelledby="visa-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Select country</p>
+                                                                    <input type="text" value="United states">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Your nationality</p>
+                                                                    <input type="text" value="Bangladesh">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                <div class="form_search_date">
+                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                        <div class="Journey_date">
+                                                                            <p>Entry date</p>
+                                                                            <input type="date" value="2022-05-03">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                        <div class="Journey_date">
+                                                                            <p>Exit date</p>
+                                                                            <input type="date" value="2022-05-05">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                    <p>Traveller, Class </p>
+                                                                    <select name="" id="">
+                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                        <option value="">1</option>
+                                                                        <option value="">2</option>
+                                                                        <option value="">3</option>
+                                                                        <option value="">4</option>
+                                                                        <option value="">5</option>
+                                                                    </select> 
+                                                                    <span>Business</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="top_form_search_button">
+                                                                <button class="btn btn_theme btn_md">Search</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="apartments" role="tabpanel" aria-labelledby="apartments-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Destination</p>
+                                                                    <input type="text" placeholder="Where are you going?">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                <div class="form_search_date">
+                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                        <div class="Journey_date">
+                                                                            <p>Journey date</p>
+                                                                            <input type="date" value="2022-05-03">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                        <div class="Journey_date">
+                                                                            <p>Return date</p>
+                                                                            <input type="date" value="2022-05-05">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                    <p>Passenger, Class </p>
+                                                                    <select name="" id="">
+                                                                        <option value="" selected="" hidden="">Select...</option>
+                                                                        <option value="">1</option>
+                                                                        <option value="">2</option>
+                                                                        <option value="">3</option>
+                                                                        <option value="">4</option>
+                                                                        <option value="">5</option>
+                                                                    </select> 
+                                                                    <span>Business</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="top_form_search_button">
+                                                                <button class="btn btn_theme btn_md">Search</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="bus" role="tabpanel" aria-labelledby="bus-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
+                                                                <div class="oneway_search_form">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                            <div class="flight_Search_boxed">
+                                                                                <p>From</p>
+                                                                                <input type="text" value="Dhaka">
+                                                                                <span>Bus Trtminal</span>
+                                                                                <div class="plan_icon_posation">
+                                                                                    <i class="fas fa-plane-departure"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                                                                            <div class="flight_Search_boxed">
+                                                                                <p>To</p>
+                                                                                <input type="text" value="Cox’s Bazar ">
+                                                                                <span>Bus Trtminal</span>
+                                                                                <div class="plan_icon_posation">
+                                                                                    <i class="fas fa-plane-arrival"></i>
+                                                                                </div>
+                                                                                <div class="range_plan">
+                                                                                    <i class="fas fa-exchange-alt"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4  col-md-6 col-sm-12 col-12">
+                                                                            <div class="form_search_date">
+                                                                                <div class="flight_Search_boxed date_flex_area">
+                                                                                    <div class="Journey_date">
+                                                                                        <p>Journey date</p>
+                                                                                        <input type="date" value="2022-05-05">
+                                                                                        <span>Thursday</span>
+                                                                                    </div>
+                                                                                    <div class="Journey_date">
+                                                                                        <p>Return date</p>
+                                                                                        <input type="date" value="2022-05-08">
+                                                                                        <span>Saturday</span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                            <div class="flight_Search_boxed dropdown_passenger_area">
+                                                                                <p>Passenger, Class </p>
+                                                                                <select name="" id="">
+                                                                                    <option value="" selected="" hidden="">Select...</option>
+                                                                                    <option value="">1</option>
+                                                                                    <option value="">2</option>
+                                                                                    <option value="">3</option>
+                                                                                    <option value="">4</option>
+                                                                                    <option value="">5</option>
+                                                                                </select> 
+                                                                                <span>Business</span>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="top_form_search_button">
+                                                                            <button class="btn btn_theme btn_md">Search</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="cruise" role="tabpanel" aria-labelledby="cruise-tab">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="tour_search_form">
+                                                    <form action="#!">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Destination</p>
+                                                                    <input type="text" placeholder="Where are you going?">
+                                                                    <span>Where are you going?</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                                                                <div class="flight_Search_boxed">
+                                                                    <p>Cruise line</p>
+                                                                    <input type="text" placeholder="American line">
+                                                                    <span>Choose your cruise</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-2  col-md-6 col-sm-12 col-12">
+                                                                <div class="form_search_date">
+                                                                    <div class="flight_Search_boxed date_flex_area">
+                                                                        <div class="Journey_date">
+                                                                            <p>Journey date</p>
+                                                                            <input type="date" value="2022-05-03">
+                                                                            <span>Thursday</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="top_form_search_button">
+                                                                <button class="btn btn_theme btn_md">Search</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- search tab -->
+
+            <!-- aboutus section -->
+            <div class="about_section section_padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                          <div class="image_block_1">
+                            <div class="image-box">
+                              <div class="shape">
+                                <div class="shape-1" style="background-image: url(https://travio.smartdemowp.com/wp-content/uploads/2021/02/shape-2.png)"></div>
+                                <div class="shape-2" style="background-image: url(https://travio.smartdemowp.com/wp-content/uploads/2021/02/shape-3.png)"></div>
+                              </div>
+                              <figure class="image image-1">
+                                <img  src="https://travio.smartdemowp.com/wp-content/uploads/2021/02/about-1.jpg" alt="">
+                              </figure>
+                              <figure class="image image-2">
+                                <img decoding="async" src="https://travio.smartdemowp.com/wp-content/uploads/2021/02/about-2.jpg" alt="">
+                              </figure>
+                              <div class="video-content">
+                                <h3>Find Your Best Destination</h3>
+                                <div class="video-btn">
+                                  <a href="https://www.youtube.com/watch?v=rvS2btPEIpo" class="lightbox-image" data-caption="">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                          <div class="content_block_1">
+                            <div class="content-box">
+                              <div class="sec-title">
+                                <p>ABOUT TRAVIO</p>
+                                <h2>World Best Travel Agency Company Since 2008.</h2>
+                              </div>
+                              <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiu smod tempor incididunt ut labore dolore magna aliqua.Quis ipsum suspen disse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.amet consectetur adipiscing elit sed do eiu smod tempor incididunt ut labore dolore magna aliqua.Quis ipsum suspen disse ultrices gravida.</p>
+                              </div>
+                              <ul class="list clearfix">
+                                <li>Ratione voluptatem.sequi nesciunt.</li>
+                                <li>Ratione voluptatem.</li>
+                                <li>Ratione voluptatem sequi.</li>
+                                <li>Ratione voluptatem.sequi nesciunt.</li>
+                                <li>Ratione voluptatem.</li>
+                                <li>Ratione voluptatem sequi.</li>
+                              </ul>
+                              <div class="about_btn">
+                                <a href="" class="main_btn">Find Tours</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end aboutus section -->
+        </main>
+
+        <!-- socket -->
+        <div class="socket_section">
+            <div class="container">
+                <div class="socket">
+                    <p class="socket_text">
+                        Copyright © <span id="socket_year">2028</span>. <a href="#">classic IT</a> all right reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- socket end -->
+
+        <!-- jquery link -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- bootstrap js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- slick slider -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/app.js"></script>
+
+    </body>
+
+</html>
