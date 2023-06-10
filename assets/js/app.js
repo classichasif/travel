@@ -47,35 +47,49 @@
 //   });
 // })
 
-// $(function (e) {
-//   "use strict";
-//   e(".testimonial-slider-slick").slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: !1,
-//       focusOnSelect: !0,
-//       dots: !0,
-//       autoplay: !1,
-//       autoplaySpeed: 5e3,
-//       appendDots: e(".custom-paging-testi"),
-//       responsive: [{
-//           breakpoint: 767,
-//           settings: {
-//               autoplay: !1
-//           }
-//       }, {
-//           breakpoint: 420,
-//           settings: {
-//               autoplay: !1
-//           }
-//       }]
-//   }),
-//   e("a[data-slide]").click(function (s) {
-//       s.preventDefault();
-//       var o = e(this).data("slide");
-//       e(".testimonial-slider-slick").slick("slickGoTo", o - 1)
-//   })
-// });
+$(function (e) {
+  "use strict";
+  e(".offer_slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: false,
+      focusOnSelect: !0,
+      dots: true,
+      autoplay: !1,
+      autoplaySpeed: 5e3,
+      swipe: true,
+      swipeToSlide: true,
+      appendDots: e(".slider_dots"),
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 3,
+          }
+      },
+      {
+          breakpoint: 766,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 2,
+          }
+      },
+      {
+          breakpoint: 576,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 1,
+          }
+      }
+    ]
+  })
+});
+
+// magnific popup
+
+$('.video_popup').magnificPopup({
+  type: 'iframe'
+});
 
 //   socket year
 let socketYear = document.getElementById("socket_year")

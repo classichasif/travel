@@ -15,6 +15,8 @@
         <!-- font awesome -->
         <link rel="stylesheet" href="assets/css/all.min.css">
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!-- slick slider -->
         <link rel="stylesheet" href="assets/css/slick.css">
         <!-- css file link -->
@@ -215,7 +217,7 @@
                                 <div class="theme_search_form_tabbtn">
                                     <ul class="nav nav-tabs" role="tablist">
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link active" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights" type="button" role="tab" aria-controls="flights" aria-selected="true"><i class="fas fa-plane-departure"></i>Flights</button>
+                                            <button class="nav-link" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights" type="button" role="tab" aria-controls="flights" aria-selected="true"><i class="fas fa-plane-departure"></i>Flights</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours" type="button" role="tab" aria-controls="tours" aria-selected="false"><i class="fas fa-globe"></i>Tours</button>
@@ -230,7 +232,7 @@
                                             <button class="nav-link" id="apartments-tab" data-bs-toggle="tab" data-bs-target="#apartments" type="button" role="tab" aria-controls="apartments" aria-selected="false"><i class="fas fa-building"></i> Apartments</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
-                                            <button class="nav-link" id="bus-tab" data-bs-toggle="tab" data-bs-target="#bus" type="button" role="tab" aria-controls="bus" aria-selected="false"><i class="fas fa-bus"></i> Bus</button>
+                                            <button class="nav-link active" id="bus-tab" data-bs-toggle="tab" data-bs-target="#bus" type="button" role="tab" aria-controls="bus" aria-selected="false"><i class="fas fa-bus"></i> Bus</button>
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <button class="nav-link" id="cruise-tab" data-bs-toggle="tab" data-bs-target="#cruise" type="button" role="tab" aria-controls="cruise" aria-selected="false"><i class="fas fa-ship"></i> Cruise</button>
@@ -239,7 +241,7 @@
                                     </ul>
                                 </div>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade active show" id="flights" role="tabpanel" aria-labelledby="flights-tab">
+                                    <div class="tab-pane fade" id="flights" role="tabpanel" aria-labelledby="flights-tab">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="flight_categories_search">
@@ -749,7 +751,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="bus" role="tabpanel" aria-labelledby="bus-tab">
+                                    <div class="tab-pane fade active show" id="bus" role="tabpanel" aria-labelledby="bus-tab">
                                         <div class="row">
                                             <div class="col-lg-12">
                                                 <div class="tour_search_form">
@@ -871,11 +873,340 @@
             </section>
             <!-- search tab -->
 
+            <!-- package section -->
+            <section class="package_section section_padding">
+                <div class="container">
+                    <div class="section_title text-center">
+                        <h1 class="section_title_text">Explore Our Package</h1>
+                    </div>
+                    <!-- all package tabs -->
+                    <div class="package_content tab">
+                        <!-- tab btn wrapper -->
+                        <div class="theme_search_form_tabbtn text-center">
+                            <div class="package_tab_btn">
+                                <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="" data-bs-toggle="tab" data-bs-target="#allpackage" type="button" role="tab" aria-controls="flights" aria-selected="true"><i class="fas fa-plane-departure"></i>All Package</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="" type="button" role="tab" aria-controls="tours" aria-selected="false" tabindex="-1"><i class="fa-sharp fa-solid fa-user"></i>Female Travels</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="" type="button" role="tab" aria-controls="hotels" aria-selected="false" tabindex="-1"><i class="fas fa-hotel"></i>Hot Package</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="" data-bs-toggle="tab" data-bs-target="" type="button" role="tab" aria-controls="hotels" aria-selected="false" tabindex="-1"><i class="fas fa-hotel"></i>Honeymoon Package</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- tab content -->
+                        <div class="tab-content">
+                            <div class="tabe-pane tab-pane fade active show" id="allpackage">
+                                <div class="row gy-4">
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/hotel2.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/hotel1.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title">
+                                                    <a href="">Cox’s Bazar City Land</a>
+                                                </h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/hotel8.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/tour1.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/tour2.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/tour3.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/tour4.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- single card column -->
+                                    <div class="col-sm-6 col-md-4 col-lg-3">
+                                        <!-- package card -->
+                                        <div class="package_item card">
+                                            <!-- card image -->
+                                            <div class="card-img">
+                                                <img src="assets/image/tour/hotel5.jpg" alt="">
+                                            </div>
+                                            <!-- card body -->
+                                            <div class="card-body">
+                                                <!-- location -->
+                                                <p class="package_item_address">
+                                                    <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                                    <span>Cox’s Bazar</span>
+                                                </p>
+                                                <!-- title -->
+                                                <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                                <!-- price -->
+                                                <div class="package_price">
+                                                    <del class="old_price text-danger">8000৳</del>
+                                                    <span class="offer_price">5000৳</span>
+                                                </div>
+                                                <!-- duration -->
+                                                <div class="package_duration">
+                                                    <p>
+                                                        <span><i class="fa-solid fa-clock"></i></span>
+                                                        <span>5 Days & 5 Nights</span>
+                                                    </p>
+                                                </div>
+                                                <!-- package details button -->
+                                                <div class="package_detailsbtn">
+                                                    <a href="" class="main_btn hover_btn">View Package</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- package section end -->
+
             <!-- aboutus section -->
-            <div class="about_section section_padding">
+            <section class="about_section section_padding">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="col-lg-5 col-md-12 col-sm-12 image-column">
                           <div class="image_block_1">
                             <div class="image-box">
                               <div class="shape">
@@ -891,19 +1222,20 @@
                               <div class="video-content">
                                 <h3>Find Your Best Destination</h3>
                                 <div class="video-btn">
-                                  <a href="https://www.youtube.com/watch?v=rvS2btPEIpo" class="lightbox-image" data-caption="">
-                                    <i class="fa-solid fa-circle-play"></i>
+                                  <a href="https://www.youtube.com/watch?v=rvS2btPEIpo" class="lightbox-image video_popup" data-caption="">
+                                    <i class="fa-solid fa-play"></i>
                                   </a>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <!-- about content -->
+                        <div class="col-lg-7 col-md-12 col-sm-12 content-column">
                           <div class="content_block_1">
                             <div class="content-box">
                               <div class="sec-title">
-                                <p>ABOUT TRAVIO</p>
+                                <p>ABOUT TBD</p>
                                 <h2>World Best Travel Agency Company Since 2008.</h2>
                               </div>
                               <div class="text">
@@ -925,20 +1257,449 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <!-- end aboutus section -->
+
+            <!-- top destination -->
+            <section class="destination section_padding">
+                <div class="container">
+                    <!-- section title -->
+                    <div class="section_title text-center">
+                        <h1 class="section_title_text">Top Destinations</h1>
+                    </div>
+                    <div class="d-flex align-items-lg-stretch flex-wrap destination_main">
+                        <!-- add -->
+                        <div class="destination_add position-relative">
+                            <!-- image -->
+                            <img src="assets/image/destination/big-img2.png" alt="">
+                            <!-- text -->
+                            <div class="destination_addtext position-absolute">
+                                <h1>Destinations</h1>
+                            </div>
+                        </div>
+                        <!-- destination wrapper -->
+                        <div class="destination_wrapper">
+                            <!-- item -->
+                            <a href="" class="destination_item">
+                                <!-- destination image -->
+                                <div class="destination_image">
+                                    <img src="assets/image/destination/219730590.webp" alt="">
+                                </div>
+                                <!-- destination content -->
+                                <div class="destination_content">
+                                    <p class="destination_name">Sylhet <img src="assets/image/destination/download.png" alt=""></p>
+                                </div>
+                            </a>
+                            <!-- item -->
+                            <a href="" class="destination_item">
+                                <!-- destination image -->
+                                <div class="destination_image">
+                                    <img src="assets/image/destination/620029.jpg" alt="">
+                                </div>
+                                <!-- destination content -->
+                                <div class="destination_content">
+                                    <p class="destination_name">Bangkok <img src="assets/image/destination/bangkok.png" alt=""></p>
+                                </div>
+                            </a>
+                            <!-- item -->
+                            <a href="" class="destination_item">
+                                <!-- destination image -->
+                                <div class="destination_image">
+                                    <img src="assets/image/destination/tour-list-about-single-image-3a-600x463.jpg" alt="">
+                                </div>
+                                <!-- destination content -->
+                                <div class="destination_content">
+                                    <p class="destination_name">Kualalam pur <img src="assets/image/destination/malaisiya.png" alt=""></p>
+                                </div>
+                            </a>
+                            <!-- item -->
+                            <a href="" class="destination_item">
+                                <!-- destination image -->
+                                <div class="destination_image">
+                                    <img src="assets/image/destination/new-big.png" alt="">
+                                </div>
+                                <!-- destination content -->
+                                <div class="destination_content">
+                                    <p class="destination_name">Kashmir<img src="assets/image/destination/india.png" alt=""></p>
+                                </div>
+                            </a>
+                            <!-- item -->
+                            <a href="" class="destination_item">
+                                <!-- destination image -->
+                                <div class="destination_image">
+                                    <img src="assets/image/destination/619676.jpg" alt="">
+                                </div>
+                                <!-- destination content -->
+                                <div class="destination_content">
+                                    <p class="destination_name">Singapore <img src="assets/image/destination/singapur.png" alt=""></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- top destination end -->
+
+            <!-- offer section -->
+            <section class="offer_section section_padding">
+                <div class="container">
+                    <!-- section title -->
+                    <div class="section_title text-center">
+                        <h1 class="section_title_text">Current Offer</h1>
+                    </div>
+                    <!-- offer slider -->
+                    <div class="offer_slider">
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/hotel5.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/hotel2.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/hotel1.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/tour4.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/tour1.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider item -->
+                        <div class="offer_slider_item">
+                            <div class="package_item card">
+                                <!-- card image -->
+                                <div class="card-img">
+                                    <img src="assets/image/tour/hotel8.jpg" alt="">
+                                </div>
+                                <!-- card body -->
+                                <div class="card-body">
+                                    <!-- location -->
+                                    <p class="package_item_address">
+                                        <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span>Cox’s Bazar</span>
+                                    </p>
+                                    <!-- title -->
+                                    <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
+                                    <!-- price -->
+                                    <div class="package_price">
+                                        <del class="old_price text-danger">8000৳</del>
+                                        <span class="offer_price">5000৳</span>
+                                    </div>
+                                    <!-- duration -->
+                                    <div class="package_duration">
+                                        <p>
+                                            <span><i class="fa-solid fa-clock"></i></span>
+                                            <span>5 Days &amp; 5 Nights</span>
+                                        </p>
+                                    </div>
+                                    <!-- package details button -->
+                                    <div class="package_detailsbtn">
+                                        <a href="" class="main_btn hover_btn">View Package</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider dots -->
+                    <div class="slider_dots"></div>
+                </div>
+            </section>
+            <!-- offer section end -->
+
+            <!-- testimonial section -->
+            <section class="testimonial_section section_padding">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                            <div class="content_block_1">
+                                <div class="content-box">
+                                    <div class="sec-title">
+                                        <p>Our testimonials</p>
+                                        <h2>What they’re talking about our policy</h2>
+                                    </div>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiu smod tempor incididunt ut labore dolore magna aliqua.Quis ipsum suspen disse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.amet consectetur adipiscing elit sed do eiu smod tempor incididunt ut labore dolore magna aliqua.Quis ipsum suspen disse ultrices gravida.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="testimonial-item">
+                               <div class="testimonial-one__single">
+                                   <div class="testimonial-one__quote">
+                                      <div class="testimonial-one__stars">
+                                         <i class="fa fa-star"></i>
+                                         <i class="fa fa-star"></i>
+                                         <i class="fa fa-star"></i>
+                                         <i class="fa fa-star"></i>
+                                         <i class="fa fa-star"></i>
+                                      </div>
+                                      Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy data foster to collaborative thinking.            <span class="testimonial-one__quote-icon"><i class="gwflaticon-quote"></i></span>
+                                      <span class="testimonial-one__arrow">
+                                         <span class="first"></span>
+                                         <span class="second"></span>
+                                      </span>
+                                   </div>
+                                   <div class="testimonial-one__meta">
+                                      <div class="testimonial-one__image"><img decoding="async" loading="lazy" width="200" height="200" src="https://gaviaspreview.com/wp/gowilds/wp-content/plugins/gowilds-themer/elementor/assets/images/testimonial.jpg" alt="Kevin Smith"></div>            <div class="testimonial-one__information">
+                                         <span class="testimonial-one__name">Kevin Smith</span>
+                                         <span class="testimonial-one__job">Customer</span>
+                                      </div>
+                                   </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonial section end -->
+
+            <!-- footer section -->
+            <footer class="main-footer bg-color-2">
+                <div class="footer-top">
+                    <div class="vector-bg"></div>
+                    <div class="container">
+                        <div class="row clearfix">
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget logo-widget">
+                                    <figure class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a></figure>
+                                    <div class="text">
+                                        <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore magna aliqua enim.</p>
+                                    </div>
+                                    <ul class="social-links clearfix">
+                                        <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget links-widget">
+                                    <div class="widget-title">
+                                        <h3>Services</h3>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="links-list clearfix">
+                                            <li><a href="index.html">About Us</a></li>
+                                            <li><a href="index.html">Listing</a></li>
+                                            <li><a href="index.html">How It Works</a></li>
+                                            <li><a href="index.html">Our Services</a></li>
+                                            <li><a href="index.html">Our Blog</a></li>
+                                            <li><a href="index.html">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget gallery-widget">
+                                    <div class="widget-title">
+                                        <h3>Gallery</h3>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="image-list clearfix">
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-1.jpg" alt=""></a></figure></li>
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-2.jpg" alt=""></a></figure></li>
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-3.jpg" alt=""></a></figure></li>
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-4.jpg" alt=""></a></figure></li>
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-5.jpg" alt=""></a></figure></li>
+                                            <li><figure class="image-box"><a href="gallery-1.html"><img src="assets/image/resource/footer-gallery-6.jpg" alt=""></a></figure></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                                <div class="footer-widget contact-widget">
+                                    <div class="widget-title">
+                                        <h3>Contacts</h3>
+                                    </div>
+                                    <div class="widget-content">
+                                        <ul class="info-list clearfix">
+                                            <li><i class="fas fa-map-marker-alt"></i>Flat 20, Reynolds Neck, North Helenaville, FV77 8WS</li>
+                                            <li><i class="fas fa-microphone"></i><a href="tel:23055873407">+2(305) 587-3407</a></li>
+                                            <li><i class="fas fa-envelope"></i><a href="mailto:info@example.com">info@example.com</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- socket -->
+                <div class="socket_section">
+                    <div class="container">
+                        <div class="socket">
+                            <p class="socket_text">
+                                Copyright © <span id="socket_year">2028</span>. <a href="#">classic IT</a> all right reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer section end -->
         </main>
 
-        <!-- socket -->
-        <div class="socket_section">
-            <div class="container">
-                <div class="socket">
-                    <p class="socket_text">
-                        Copyright © <span id="socket_year">2028</span>. <a href="#">classic IT</a> all right reserved
-                    </p>
-                </div>
-            </div>
-        </div>
         <!-- socket end -->
 
         <!-- jquery link -->
@@ -947,6 +1708,8 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <!-- slick slider -->
         <script src="assets/js/slick.min.js"></script>
+        <!-- magnific popup -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
 

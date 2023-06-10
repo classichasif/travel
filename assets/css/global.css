@@ -28,9 +28,7 @@ hr {
 }
 
 :root{
-    --primary-color: #ff7c5b;
-    --main-color: #061a3a;
-    --main-color: #006ce4;
+    --primary-color: #d4a538;
     --main-color: #75b2b3;
     --low-bg: rgba(9, 137, 255, 0.06);
     --bg-color: #f5f8fe;
@@ -145,10 +143,7 @@ img{
 }
 
 /* socket section */
-.socket_section{
-    background: var(--main-color);
-    display: none;
-}
+
 .socket {
     padding: 30px 0px;
     border-top: 1px solid rgb(124 146 154 / 20%);
@@ -162,4 +157,28 @@ img{
 
 .socket_text a {
     color: var(--primary-color);
+}
+
+/* section title */
+
+.section_title{
+    padding-bottom: 30px;
+}
+
+.section_title_text{
+    position: relative;
+    padding-bottom: 10px;
+    font-size: 42px;
+    color: var(--text-color);
+    display: inline-block;
+}
+
+.section_title_text::after{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 40%;
+    background: var(--main-color);
+    left: 0px;
+    bottom: 0px;
 }
