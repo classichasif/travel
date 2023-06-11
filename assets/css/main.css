@@ -134,16 +134,20 @@
     position: relative;
     z-index: 1;
     background-repeat: repeat-x;
-    -webkit-animation: slide 100s linear infinite;
+    animation: slideBanner 20s linear infinite;
 }
 
-@keyframes slide{
+@keyframes slideBanner{
     0% {
-        background-position: 0 0;
+        background-image: url(../image/225704425.jpg);
     }
-    
+
+    50% {
+        background-image: url(../image/banner-02.jpg);
+    }
+
     100% {
-        background-position: 1920px 0;
+        background-image: url(../image/banner3.jpg);
     }
 }
 
@@ -458,9 +462,11 @@
     height: 346px;
     background-repeat: no-repeat;
     z-index: -1;
+    background-image: url(../image/about/shape-2.png)
 }
 
 .image_block_1 .image-box .shape .shape-2 {
+    background-image: url(../image/about/shape-3.png);
     position: absolute;
     left: 35px;
     top: -55px;
