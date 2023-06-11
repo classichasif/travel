@@ -161,7 +161,6 @@
 .banner_content {
     max-width: 550px;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .banner_heading {
@@ -187,8 +186,7 @@
 
 /* search area */
 
-.search_form{
-    margin-top: -220px;
+.search_form {
     position: relative;
     z-index: 2;
 }
@@ -803,6 +801,7 @@
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
+    height: 154px;
 }
 
 .destination_addtext {
@@ -956,9 +955,10 @@
     margin-right: -15px;
 }
 
-.footer-top .logo-widget .footer-logo {
+.footer_logo {
     position: relative;
     margin-bottom: 35px;
+    width: 200px;
 }
 
 .footer-top p, .footer-top a {
@@ -1108,10 +1108,48 @@
 }
 
 /* testimonial section */
-.testimonial_section{
+
+.testimonial_section {
     background: url(../image/resource/testimonial.png);
     position: relative;
     z-index: 1;
+    background-size: cover;
+    animation: testiMonial 20s linear infinite;
+}
+
+@keyframes testiMonial{
+    0% {
+        background-position: 0 0;
+    }
+
+    15% {
+        background-position: 250px 50px;
+    }
+
+    30% {
+        background-position: 500px 0px;
+    }
+    
+
+    45% {
+        background-position: 750px 50px;
+    }
+
+    60% {
+        background-position: 1000px 0px;
+    }
+
+    75% {
+        background-position: 1250px 50px;
+    }
+    
+    90% {
+        background-position: 1500px 0px;
+    }
+    
+    100% {
+        background-position: 1750px 50px;
+    }
 }
 
 .testimonial_section::after {
@@ -1133,17 +1171,16 @@
 }
 
 .testimonial-one__quote {
-    font-size: 20px;
-    line-height: 38px;
-    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
     margin-bottom: 18px;
-    padding: 50px 60px;
+    padding: 30px;
     background: #fff;
-    color: var(--e-global-color-accent);
+    color: var(--text-color);
     border-radius: 10px;
     border-bottom: 4px solid var(--main-color);
     position: relative;
-    box-shadow: 0px 5px 30px hsl(0deg 0% 0% / 10%);
 }
 
 .testimonial-one__stars {
@@ -1153,7 +1190,7 @@
 }
 
 .testimonial-one__stars i {
-    color: var(--main-color);
+    color: var(--primary-color);
 }
 
 .testimonial-one__meta {
@@ -1218,6 +1255,10 @@
     -ms-flex-align: center;
     align-items: center;
     padding-left: 20px;
+}
+
+.testimonial-one__quote-icon i{
+    font-weight: 100;
 }
 
 .testimonial-one__arrow {

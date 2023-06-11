@@ -9,6 +9,18 @@
     .destination_item {
         width: calc(33.33% - 8px);
     }
+
+    .search_form{
+        margin-top: -220px;
+    }
+
+    .banner_content {
+        margin-bottom: 100px;
+    }
+
+    .destination_add {
+        height: 300px;
+    }
 }
 /* 768 */
 @media(min-width: 767px){
@@ -17,6 +29,10 @@
     }
     .destination_item {
         height: 200px;
+    }
+
+    .destination_add {
+        height: 350px;
     }
 }
 /* 1024 */
@@ -27,6 +43,10 @@
 
     .destination_wrapper{
         gap: 24px;
+    }
+
+    .destination_add {
+        height: auto;
     }
 
     .destination_item:first-child,
@@ -46,6 +66,9 @@
     
     .destination_wrapper{
         width: 60%;
+    }
+    .testimonial-one__quote {
+        padding: 50px 60px;
     }
 }
 /* 1240 */

@@ -32,20 +32,17 @@
 //     }
 // })
 
-// // banner slider
-// $(function (e){
-//   e('.banner_slider').slick({
-//       lazyLoad: 'ondemand',
-//       dots: true,
-//       infinite: true,
-//       speed: 500,
-//       fade: true,
-//       cssEase: 'linear',
-//       arrows: false,
-//       autoplay: true,
-//       appendDots: e(".slider_dots"),
-//   });
-// })
+// banner slider
+$(function (e){
+  e('.testimonial_slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 500,
+      cssEase: 'linear',
+      arrows: false,
+      autoplay: true,
+  });
+})
 
 $(function (e) {
   "use strict";
