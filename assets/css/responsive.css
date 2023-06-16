@@ -21,6 +21,24 @@
     .destination_add {
         height: 300px;
     }
+
+    .tourlist_wrapper .package_item {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .tourlist_wrapper .package_item .card-img {
+        height: auto;
+        width: 40%;
+    }
+    
+    .tourlist_wrapper .package_item .card-body {
+        width: calc(100% - 40%);
+    }
+    
+    .tourgrid_wrapper .package_item{
+        width: calc(50% - 12px);
+    }
 }
 /* 768 */
 @media(min-width: 767px){
@@ -34,11 +52,49 @@
     .destination_add {
         height: 350px;
     }
+    .tourlist_wrapper .package_item .card-img {
+        width: 30%;
+    }
+    
+    .tourlist_wrapper .package_item .card-body {
+        width: calc(100% - 30%);
+    }
+
+    .tourgrid_wrapper .package_item{
+        width: calc(33.33% - 16px);
+    }
 }
 /* 1024 */
-@media(min-width: 992px){
+@media(min-width: 991px){
+    .main{
+        margin-top: 133px;
+    }
+
+    .bottom_nav{
+        display: none;
+    }  
+
     .section_padding{
         padding: 50px 0px;
+    }
+
+    .header_logo{
+        width: 200px;
+    }
+
+    .banner_content {
+        margin-bottom: 170px;
+    }
+
+    .form_nav_tab {
+        background: #FFFFFF;
+        border-radius: 12px;
+        padding: 36px 30px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    }
+
+    .search_form .theme_search_form_tabbtn {
+        margin-top: -78px;
     }
 
     .destination_wrapper{
@@ -70,7 +126,33 @@
     .testimonial-one__quote {
         padding: 50px 60px;
     }
+
+    .tourlist_sidebar {
+        width: 320px;
+        position: sticky;
+        top: 100px;
+        background: transparent;
+        height: auto !important;
+        z-index: auto;
+    }
+
+    .tourlist_content{
+        width: calc(100% - 344px);
+    }
+
+    .tourlist_wrapper .package_item .card-img {
+        width: 40%;
+    }
+    
+    .tourlist_wrapper .package_item .card-body {
+        width: calc(100% - 40%);
+    }
+
+    .tourgrid_wrapper .package_item{
+        width: calc(50% - 12px);
+    }
 }
+
 /* 1240 */
 @media(min-width: 1200px){
     .section_padding{
@@ -83,6 +165,17 @@
 
     .destination_name {
         font-size: 18px;
+    }
+    .tourlist_wrapper .package_item .card-img {
+        width: 30%;
+    }
+    
+    .tourlist_wrapper .package_item .card-body {
+        width: calc(100% - 30%);
+    }
+
+    .tourgrid_wrapper .package_item{
+        width: calc(33.33% - 18px);
     }
 }
 

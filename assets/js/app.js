@@ -1,36 +1,52 @@
-
-// const headerElement = {
-//   toggleBtn:document.getElementById("toggle_btn"),
-//   headerNav:document.getElementById("header_nav"),
-//   crosBtn:document.getElementById("cros_btn"),
-// }
-
-// const {headerNav, toggleBtn, crosBtn} = headerElement
-// toggleBtn.addEventListener("click", function(){
-//   headerNav.classList.toggle("activeNav")
-// })
-// crosBtn.addEventListener("click", function(){
-//   headerNav.classList.remove("activeNav")
-// })
-
-// window.addEventListener("click", function(event) {
-//   if (!headerNav.contains(event.target) && !toggleBtn.contains(event.target)) {
-//     headerNav.classList.remove("activeNav")
-//   }
-// });
-
 // // sticky menu
-// var header = document.getElementsByClassName("main_header")[0];
-// var sticky = header.offsetTop + 200;
+var header = document.getElementsByClassName("main_header")[0];
+var sticky = header.offsetTop;
 
 
-// window.addEventListener('scroll', function () {
-//     if (window.pageYOffset > sticky) {
-//         header.classList.add("sticky");
-//     } else {
-//         header.classList.remove("sticky");
-//     }
-// })
+window.addEventListener('scroll', function () {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+})
+
+// dropdown js
+
+// object select element
+const selectElement = {
+    dropdownBtn: document.getElementsByClassName("dropdown_button"),
+    subNavItem: document.getElementsByClassName("dropdown_sub"),
+    nestedDropdownBtn: document.getElementsByClassName("sub_dropdown_btn"),
+    subDropdownItem: document.getElementsByClassName("sub_nestedDrop_nav")
+}
+
+// element destructure
+let {dropdownBtn, subNavItem, subDropdownItem, nestedDropdownBtn} = selectElement
+
+;[...dropdownBtn].forEach((innerBtn, index) => {
+    let innerNav = subNavItem[index];
+    innerBtn.addEventListener("click", function() {
+      $(innerNav).slideToggle();
+      $(".dropdown_sub").not(innerNav).slideUp();
+      $(".dropdown_button").removeClass("active");
+      $(innerBtn).toggleClass("active");
+    });
+});
+
+// nested sub nav
+;[...nestedDropdownBtn].forEach((innerNested, index) => {
+    let innerNestedNav = subDropdownItem[index];
+    innerNested.addEventListener("click", function() {
+      $(innerNestedNav).slideToggle();
+      $(".sub_nestedDrop_nav").not(innerNestedNav).slideUp();
+      $(".sub_dropdown_btn").removeClass("active");
+      $(innerNested).toggleClass("active");
+    });
+  });
+
+
+
 
 // banner slider
 $(function (e){
@@ -96,5 +112,3 @@ let PresentYear = (year) =>{
   year.innerText = PreYear
 }
 PresentYear(socketYear)
-
-  

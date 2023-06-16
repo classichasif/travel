@@ -1,6 +1,18 @@
 /* header section */
-.header_logo{
-    width: 200px;
+.main {
+    margin-top: 63px;
+}
+
+.header_section {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+.header_logo {
+    width: 150px;
 }
 
 .header_iconbox {
@@ -21,10 +33,6 @@
 
 .main_header_content{
     background: var(--main-color);
-}
-
-.header_section{
-    position: relative;
 }
 
 .header_top {
@@ -83,14 +91,109 @@
 
 /* main heaqer */
 
-.main_header{
+.main_header {
     background: var(--bg-color);
+    z-index: 999;
 }
 
 .header_nav_list{
     display: flex;
     align-items: center;
     gap: 6px;
+}
+
+.header_nav_item {
+    position: relative;
+    padding: 21px 0px;
+}
+
+.suv_nav {
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0px;
+    width: 250px;
+    max-height: 0px;
+    background: var(--global-color);
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    border-radius: 4px;
+    transition: var(--transition);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sub_nav_item a{
+    position: relative;
+}
+
+.nested_subnav {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    background: var(--global-color);
+    z-index: 999;
+    width: 200px;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 10%);
+    height: 312px;
+    border-radius: 4px;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.sub_nav_item:hover .nested_subnav{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.nested_subnav::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.nested_subnav::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: var(--bg-color);
+}
+
+.nested_subnav::-webkit-scrollbar-thumb {
+    background: var(--main-color); 
+    border-radius: 10px;
+}
+.sub_nav_item > a::after {
+    content: "\f054";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    font-size: 14px;
+}
+
+.header_nav_item:hover .suv_nav{
+    max-height: 800px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.suv_nav ul{
+    padding: 10px 0px;
+}
+
+.suv_nav ul li a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 6px 20px;
+    padding: 5px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.suv_nav ul li:last-child a{
+    border: none;
 }
 
 .header_nav_link {
@@ -106,10 +209,6 @@
     transition: var(--transition);
 }
 
-.header_nav_link:hover{
-    background: rgb(6 26 58 / 5%);
-}
-
 .header_nav_link span i{
     font-size: 14px;
     font-weight: 600 !important;
@@ -120,10 +219,142 @@
     color: var(--global-color);
 }
 
+/* Mobile Nav */
+
+.offcanvas.offcanvas-start {
+    width: 320px;
+    height: calc(100% - 60px);
+}
+
+.offcanvas-backdrop {
+    height: calc(100% - 60px);
+}
+
+.nav_logo a{
+    width: 130px;
+    display: block;
+}
+
+.mobile_suv_nav > ul {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.mobile_nav ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.nested_mobile_subnav ul{
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.mobile_sub_nav_item {
+    background: #e9ecef;
+}
+
+a.sub_dropdown_btn.active {
+    background: var(--main-color);
+    color: var(--global-color) !important;
+}
+
+.offcanvas-header button,
+.cross_tourside button {
+    height: 36px;
+    width: 36px;
+    background: #75bbbce0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: var(--global-color);
+    border: none;
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+}
+
+.mobile_nav > ul > li{
+    background: var(--bg-color);
+    border-radius: 5px;
+}
+
+.mobile_nav ul li a{
+    padding: 7px 20px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.dropdown_button.active {
+    background: var(--text-color);
+    color: var(--global-color);
+}
+
+.mobile_sub_nav_item a {
+    color: var(--text-color) !important;
+    padding: 5px 10px;
+}
+
+.mobile_suv_nav {
+    display: none;
+}
+
+.nested_mobile_subnav {
+    display: none;
+}
+
+/* bottom nav */
+
+.bottom_nav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+    height: 60px;
+    background: var(--global-color);
+    box-shadow: 0px 7px 30px rgb(0 0 0 / 10%);
+    display: block;
+    border-top: 1px solid var(--border-color);
+}
+
+.bottom_navlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bottom_navlist li {
+    width: 20%;
+}
+
+.bottom_navlist li a span {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 16px;
+    display: block;
+    text-align: center;
+}
+
+.bottom_navlist_icon {
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom_navlist_icon i {
+    display: block;
+    color: var(--main-color);
+}
+
 /* banner section */
 
 .banner_section{
-    background-image: url(../image/225704425.jpg);
     height: 500px;
     display: flex;
     justify-content: center;
@@ -134,7 +365,7 @@
     position: relative;
     z-index: 1;
     background-repeat: repeat-x;
-    animation: slideBanner 20s linear infinite;
+    animation: slideBanner 50s linear infinite;
 }
 
 @keyframes slideBanner{
@@ -142,12 +373,16 @@
         background-image: url(../image/225704425.jpg);
     }
 
-    50% {
+    25% {
         background-image: url(../image/banner-02.jpg);
     }
 
-    100% {
+    75% {
         background-image: url(../image/banner3.jpg);
+    }
+
+    100% {
+        background-image: url(../image/225704425.jpg);
     }
 }
 
@@ -195,6 +430,10 @@
     z-index: 2;
 }
 
+.theme_search_form_tabbtn .nav-item:last-child{
+    margin: 0px;
+}
+
 .theme_search_form_area {
     background: #FFFFFF;
     box-shadow: 4px 14px 28px rgba(0, 0, 0, 0.1);
@@ -219,24 +458,20 @@
     margin-bottom: 0;
     color: var(--black-color);
     border-radius: 6px;
-    border: 1px solid var(--main-color);
-}
-
-.theme_search_form_tabbtn .nav-tabs .nav-link.active {
-    color: var(--global-color);
 }
 
 .theme_search_form_tabbtn .nav-tabs .nav-link{
     position: relative;
     overflow: hidden;
     z-index: 1;
+    border: none;
 }
 
 .theme_search_form_tabbtn .nav-tabs .nav-link::after{
     content: "";
     position: absolute;
-    top: 0px;
-    height: 100%;
+    bottom: 0px;
+    height: 3px;
     background: var(--main-color);
     transition: var(--transition);
     z-index: -1;
@@ -1296,4 +1531,371 @@
     clip-path: polygon(0 0, 0% 100%, 100% 0);
     background: var(--main-color);
     z-index: 1;
+}
+
+/* tourlist page */
+
+.tourlist_main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    position: relative;
+}
+
+.tourlist_sidebar {
+    width: 320px;
+    position: fixed;
+    top: 63px;
+    left: -100%;
+    background: var(--global-color);
+    height: calc(100vh - 123px);
+    overflow: auto;
+    z-index: 5;
+    transition: var(--transition);
+}
+
+.tourlist_sidebar.active{
+    left: 0px;
+}
+
+.tourlist_main .offcanvas-backdrop{
+    display: none;
+}
+
+.tourlist_sidebar .accordion {
+    border: 1px solid #e7eaf3;
+    background: var(--bg-color);
+    border-radius: 5px;
+}
+
+.tourside_block {
+    border-bottom: 1px solid #e7eaf3;
+    padding: 20px 20px 20px;
+}
+
+.tour_blockbody_content {
+    padding-top: 20px;
+}
+
+.tour_block_title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.block_filterBtn button{
+    background: var(--main-color);
+    color: var(--global-color);
+}
+
+/* filter list */
+.filter_list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.filter_list_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.filter_checked{
+    display: flex;
+    align-items: center;
+    gap: 12px;     
+}
+
+.filter_checked span{
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    color: var(--primaryColor);
+    border-radius: 3px;
+}
+
+.check_inner {
+    position: relative;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+  }
+  
+  .check_inner input {
+    appearance: none;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 2px solid var(--border-color);
+
+  }
+  
+  .check_inner input:checked ~ .checkmark {
+    background-color: var(--main-color);
+    border: none;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .check_inner input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .check_inner .checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+}
+
+.filiter_count {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 5px 12px;
+    color: var(--main-color);
+    background: #e8edf6;
+    border-radius: 25px;
+}
+
+
+/* salary range */
+
+.range_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.range{
+    width: calc(100% - 90px);
+}
+
+.range input{
+    appearance: none;
+    height: 8px;
+    width: 100%;
+    background: var(--bg-color);
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.range input::-webkit-slider-runnable-track{
+    appearance: none;
+    height: 8px;
+}
+.range input::-moz-track{
+    appearance: none;
+    height: 8px;
+}
+.range input::-ms-track{
+    appearance: none;
+    height: 8px;
+}
+
+.range input::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    background: var(--main-color);
+    margin-top: -6px;
+}
+.range input::-moz-range-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    background: var(--main-color);
+    margin-top: -6px;
+}
+.range input::-ms-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+    border: none;
+    background: var(--main-color);
+    margin-top: -6px;
+}
+
+.range_output {
+    width: 80px;
+    border: 1px solid #e7eaf3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.tour_search_box {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+    background: var(--bg-color);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.tour_search_box .tourside_block{
+    border: none;
+}
+
+.search_input{
+    margin-bottom: 20px;
+}
+
+.search_input input{
+    height: 40px;
+    border-radius: 3px;
+    border: 1px solid #e7eaf3;
+}
+
+.search_input input:focus{
+    border: 1px solid var(--main-color);
+}
+
+/* salary range */
+
+.tourlist_content{
+    width: 100%;
+}
+
+/* filter header */
+
+.filter_header {
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.main_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.filter_header_left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.tourview_type_wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.filter_icon button{
+    border: none;
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--global-color);
+}
+
+
+.tourgrid_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.tourgrid_wrapper .package_item{
+    width: 100%;
+}
+
+.tourlist_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tourlist_wrapper .package_item {
+    width: 100%;
+    flex-direction: column;
+}
+
+.tourlist_wrapper .package_item .card-img {
+    height: auto;
+    width: 100%;
+}
+
+.tourlist_wrapper .package_item .card-body {
+    width: 100%;
+}
+
+.tourlist_wrapper .package_item .package_duration {
+    display: inline-block;
+}
+
+/* paginate */
+
+.paginate{
+    margin-top: 30px;
+}
+
+.paginate_list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.paginate_item {
+    margin-left: -1px;
+}
+
+.paginate_link{
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.activePage.paginate_link{
+    background: var(--text-color);
+    color: var(--global-color);
+}
+
+.paginate_item:first-child .paginate_link,
+.paginate_item:last-child .paginate_link{
+    background: var(--main-color);
+    color: var(--global-color);
 }
