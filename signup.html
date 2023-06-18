@@ -772,775 +772,86 @@
             </div>
         </header>
         <!-- header section end -->
+
         <!-- main -->
         <main class="main">
-            <!-- tourlist content -->
-            <div class="tuorlis section_padding">
+            <!-- main form -->
+            <div class="main__form section_padding">
                 <div class="container">
-                    <!-- main -->
-                    <div class="tourlist_main">
-                        <!-- sidebar -->
-                        <div class="tourlist_sidebar" id="filter">
-                            <!-- search box -->
-                            <div class="tour_search_box">
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <!-- title -->
-                                            <p class="tour_block_title">Search Tours</p>
-                                            <!-- close -->
-                                            <div class="cross_tourside d-lg-none" id="cross_tourside">
-                                                <button type="button"><i class="fa-solid fa-xmark"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <form action="">
-                                                <!-- search input -->
-                                                <div class="search_input">
-                                                    <input type="text" class="form-control" placeholder="Search Location">
-                                                </div>
-                                                <!-- search btn -->
-                                                <div class="block_filterBtn">
-                                                    <button type="button" class="main_btn w-100">Search</button>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
+                    <div class="main__form_content">
+                        <form action="">
+                            <div class="form__logo">
+                                <img src="assets/image/logo.png" alt="">
+                            </div>
+                            <!-- form ttile -->
+                            <h2 class="main__form_title">Sign Up</h2>
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <label for="email" class="input__title">Email</label>
+                                <div class="input__group">
+                                    <span class="input__group_icon"><i class="fa-solid fa-envelope"></i></span>
+                                    <input type="email" class="input__control" placeholder="example@gmail.com" id="email">
                                 </div>
                             </div>
-                            <div class="accordion">
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#city">
-                                            <!-- title -->
-                                            <p class="tour_block_title">City Tours</p>
-                                            <span class="tour_block_icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div id="city" class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <ul class="filter_list">
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox" checked="checked">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Khulna</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Cox,s Bazar</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">3</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Rajshahi</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Sylhet</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">5</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#second">
-                                            <!-- title -->
-                                            <p class="tour_block_title">Price Range</p>
-                                            <span class="tour_block_icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div id="second" class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <!-- range inner -->
-                                            <div class="range_inner">
-                                                <!-- range -->
-                                                <label class="range">
-                                                    <input oninput="slider()" type="range" value="10" min="0" max="60" id="mySlider">
-                                                </label>
-                                                <!-- range output -->
-                                                <p class="range_output">
-                                                    <span id="slider-value">27</span> 
-                                                    <span>k</span>
-                                                </p>
-                                            </div>
-                                            <!-- filter button -->
-                                            <div class="block_filterBtn">
-                                                <button type="button" class="main_btn">Filter</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#Meals">
-                                            <!-- title -->
-                                            <p class="tour_block_title">Meals</p>
-                                            <span class="tour_block_icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div id="Meals" class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <ul class="filter_list">
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox" checked="checked">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>All-inclusive</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">25</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Breakfast & dinner included</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">5</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Breakfast Included</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">10</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Kitchen facilities</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">10</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#facilities">
-                                            <!-- title -->
-                                            <p class="tour_block_title">Facilities</p>
-                                            <span class="tour_block_icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div id="facilities" class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <ul class="filter_list">
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox" checked="checked">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Gucci</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Mango</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">3</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Parking</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Pet friendly</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">10</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Restaurant</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">5</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Home Service</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- block -->
-                                <div class="tourside_block">
-                                    <!-- header -->
-                                    <div class="tourside_block_header">
-                                        <!-- button wrapper -->
-                                        <div class="d-flex align-items-center justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#Property">
-                                            <!-- title -->
-                                            <p class="tour_block_title">Property Type</p>
-                                            <span class="tour_block_icon"><i class="fa-solid fa-chevron-down"></i></span>
-                                        </div>
-                                    </div>
-                                    <!-- body -->
-                                    <div id="Property" class="collapse show tour_blockbody">
-                                        <!-- content -->
-                                        <div class="tour_blockbody_content">
-                                            <ul class="filter_list">
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox" checked="checked">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Apartments</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Bed and Breakfasts</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">3</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Hotels</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">2</span>
-                                                </li>
-                                                <!-- filter list item -->
-                                                <li class="filter_list_item">
-                                                    <!-- filter checked -->
-                                                    <div class="filter_checked">
-                                                        <!-- inner check -->
-                                                        <label class="check_inner">
-                                                            <input type="checkbox">
-                                                            <span class="checkmark"></span>
-                                                        </label>
-                                                        <span>Resorts</span>
-                                                    </div>
-                                                    <!-- filiter_count -->
-                                                    <span class="filiter_count">5</span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                            
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <label for="email" class="input__title">Mobile</label>
+                                <div class="input__group">
+                                    <span class="input__group_icon"><i class="fa-solid fa-phone"></i></span>
+                                    <input type="tel" class="input__control" placeholder="01XXX XXXXXX" id="email">
                                 </div>
                             </div>
-                            <!-- sidebar block -->
-                        </div>
-                        <!-- body -->
-                        <div class="tourlist_content">
-                            <!-- header -->
-                            <div class="filter_header">
-                                <!-- main wrapper -->
-                                <div class="main_wrapper">
-                                    <!-- total tour -->
-                                    <div class="filter_header_left">
-                                         <!-- btn item -->
-                                         <div class="filter_icon d-lg-none">
-                                            <button id="sidefilterBtn">
-                                                <i class="fa-solid fa-list"></i>
-                                            </button>
-                                        </div>
-                                        <p class="total_tour">
-                                            <strong>200</strong> results found
-                                        </p>
-                                    </div>
-                                    <!-- tourview btn -->
-                                    <div class="tourview_type_wrapper">
-                                        <!-- btn item -->
-                                        <div class="filter_icon">
-                                            <button id="list_btn">
-                                                <i class="fa-solid fa-bars"></i>
-                                            </button>
-                                        </div>
-                                        <!-- btn item -->
-                                        <div class="filter_icon">
-                                            <button id="grid_btn">
-                                                <i class="fa-solid fa-grid-2"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <label for="email" class="input__title">Password</label>
+                                <div class="input__group">
+                                    <span class="input__group_icon"><i class="fa-solid fa-lock"></i></span>
+                                    <input type="password" class="input__control" placeholder="xDue4WExample" id="email">
                                 </div>
                             </div>
-                            <!-- tourlist -->
-                            <div class="tourgrid_wrapper" id="tour_view">
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/hotel2.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/hotel1.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title">
-                                            <a href="">Cox’s Bazar City Land</a>
-                                        </h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/hotel8.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/tour1.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/tour2.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/tour3.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/tour4.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- item -->
-                                <div class="package_item card">
-                                    <!-- card image -->
-                                    <div class="card-img">
-                                        <img src="assets/image/tour/hotel5.jpg" alt="">
-                                    </div>
-                                    <!-- card body -->
-                                    <div class="card-body">
-                                        <!-- location -->
-                                        <p class="package_item_address">
-                                            <span class="address_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                            <span>Cox’s Bazar</span>
-                                        </p>
-                                        <!-- title -->
-                                        <h3 class="package_item_title"><a href="">Cox’s Bazar City Land</a></h3>
-                                        <!-- price -->
-                                        <div class="package_price">
-                                            <del class="old_price text-danger">8000৳</del>
-                                            <span class="offer_price">5000৳</span>
-                                        </div>
-                                        <!-- duration -->
-                                        <div class="package_duration">
-                                            <p>
-                                                <span><i class="fa-solid fa-clock"></i></span>
-                                                <span>5 Days &amp; 5 Nights</span>
-                                            </p>
-                                        </div>
-                                        <!-- package details button -->
-                                        <div class="package_detailsbtn">
-                                            <a href="" class="main_btn hover_btn">View Package</a>
-                                        </div>
-                                    </div>
+
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <label for="email" class="input__title">Confirm Password</label>
+                                <div class="input__group">
+                                    <span class="input__group_icon"><i class="fa-solid fa-lock"></i></span>
+                                    <input type="password" class="input__control" placeholder="xDue4WExample" id="email">
                                 </div>
                             </div>
-                            <!-- paginate -->
-                            <div class="paginate">
-                                <ul class="paginate_list">
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            <i class="fa-regular fa-chevron-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            1
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            2
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link activePage">
-                                            3
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            4
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            5
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            6
-                                        </a>
-                                    </li>
-                                    <li class="paginate_item">
-                                        <a href="" class="paginate_link">
-                                            <i class="fa-regular fa-chevron-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- check inner -->
+                                    <label class="check_inner">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <p class="main__form_text text-start">Agree Terms and policy</p>
+                                </div>
                             </div>
-                        </div>
+                            
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <!-- submit btn -->
+                                <div class="form__submitbtn">
+                                    <button class="main_btn hover_btn w-100">Sign Up</button>
+                                </div>
+                            </div>
+                            
+                            <!-- input inner -->
+                            <div class="main__form_inputinner">
+                                <p class="main__form_text">Already have an Account?<a href="./login.html" class="main__form_link"> Sign In</a></p> 
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- tourlist content end -->
         </main>
-
+        
         <!-- footer section -->
         <footer class="main-footer bg-color-2">
             <div class="footer-top">
@@ -1552,8 +863,8 @@
                                 <figure class="footer_logo"><a href="index.html"><img src="assets/image/logo.png"
                                             alt=""></a></figure>
                                 <div class="text">
-                                    <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in
-                                        cididunt ut labore dolore magna aliqua enim.</p>
+                                    <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt
+                                        ut labore dolore magna aliqua enim.</p>
                                 </div>
                                 <ul class="social-links clearfix">
                                     <li><a href="index.html"><i class="fab fa-facebook-f"></i></a></li>
@@ -1653,6 +964,7 @@
             </div>
         </footer>
         <!-- footer section end -->
+        
         <!-- socket end -->
         <!-- jquery link -->
         <script src="assets/js/jquery.min.js"></script>
@@ -1662,8 +974,6 @@
         <script src="assets/js/slick.min.js"></script>
         <!-- magnific popup -->
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <!-- tourlist -->
-        <script src="assets/js/tourlist.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
     </body>

@@ -46,8 +46,6 @@ let {dropdownBtn, subNavItem, subDropdownItem, nestedDropdownBtn} = selectElemen
   });
 
 
-
-
 // banner slider
 $(function (e){
   e('.testimonial_slider').slick({
@@ -112,3 +110,64 @@ let PresentYear = (year) =>{
   year.innerText = PreYear
 }
 PresentYear(socketYear)
+
+
+// package
+$(".one-item-slider").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: ".all-item-slider",
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        vertical: false,
+        horizontal: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+$(".all-item-slider").slick({
+  slidesToShow: 4,
+  asNavFor: ".one-item-slider",
+  arrows: false,
+  dots: false,
+  focusOnSelect: true,
+  vertical: true,
+  verticalSwiping: true,
+  cssEase: 'linear',
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        vertical: false,
+        horizontal: true,
+        slidesToShow: 3,
+      },
+    },
+  ],
+});

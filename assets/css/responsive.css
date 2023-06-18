@@ -39,6 +39,13 @@
     .tourgrid_wrapper .package_item{
         width: calc(50% - 12px);
     }
+
+    .model-gallery-image .one-item-slider .item{
+        height: 430px !important;
+    }
+    .model-gallery-image .all-item-slider {
+        margin-top: -6px;
+    }
 }
 /* 768 */
 @media(min-width: 767px){
@@ -63,9 +70,14 @@
     .tourgrid_wrapper .package_item{
         width: calc(33.33% - 16px);
     }
+
+    .model-gallery-image .all-item-slider li {
+        margin: 5px 0px;
+    }
+
 }
 /* 1024 */
-@media(min-width: 991px){
+@media(min-width: 992px){
     .main{
         margin-top: 133px;
     }
