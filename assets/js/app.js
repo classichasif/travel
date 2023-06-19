@@ -171,3 +171,22 @@ $(".all-item-slider").slick({
     },
   ],
 });
+
+// currency 
+
+const curElement = {
+  mainCurrency: document.getElementById("currency"),
+  langBtn: document.getElementById("lang_btn")
+}
+let {mainCurrency, langBtn} = curElement
+const currencyItem = mainCurrency.children;
+
+;[...currencyItem].forEach((innerItem) => {
+  const languageText = innerItem.querySelector(".language_text");
+  const languageFlag = innerItem.querySelector(".language_flag");
+  
+  innerItem.addEventListener("click", function(e){
+    langBtn.querySelector(".language_text_select").textContent = languageText.textContent;
+    langBtn.querySelector(".language_flag").innerHTML = languageFlag.innerHTML;
+  });
+});

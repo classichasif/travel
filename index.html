@@ -29,7 +29,7 @@
         <!-- header section -->
         <header class="header_section">
             <!-- header top -->
-            <div class="header_top py-2">
+            <div class="header_top py-2 d-none d-lg-block">
                 <div class="container">
                     <div class="d-flex justify-content-between align-items-center flex-wrap">
                         <!-- header info -->
@@ -45,85 +45,104 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- header right -->
                         <div class="top_header_right d-flex justify-content-sm-end align-items-center gap-3">
                             <!-- multilanguage -->
                             <div class="multi_language dropdown d-flex">
                                 <button class="global_btn rounded-circle" data-bs-toggle="dropdown">
-                                    <div class="lang_btn d-flex gap-2">
+                                    <div class="lang_btn d-flex gap-2" id="lang_btn">
                                         <!-- flag -->
                                         <div class="language_flag">
                                             <img src="assets/image/flag/us.svg" alt="flag">
                                         </div>
                                         <!-- text -->
-                                        <p class="language_text_select">English</p>
+                                        <p class="language_text_select">USD</p>
                                     </div>
                                 </button>
                                 <div class="dropdown-menu langList_dropdow py-2">
-                                    <ul>
+                                    <ul id="currency">
+                                        
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/bangladesh.png" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">BDT</p>
+                                        </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/china.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">China</p>
+                                            <p class="language_text">Yuan</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/us.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">USA</p>
+                                            <p class="language_text">USD</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/french.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">France</p>
+                                            <p class="language_text">Euro</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/germany.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">Germany</p>
+                                            <p class="language_text">Euro</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/italy.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">Italy</p>
+                                            <p class="language_text">Euro</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/russia.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">Russia</p>
+                                            <p class="language_text">Ruble</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/spain.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">Spain</p>
+                                            <p class="language_text">Euro</p>
                                         </li>
+
                                         <li class="d-flex align-items-center gap-3 px-2 py-1">
                                             <!-- flag -->
                                             <div class="language_flag">
                                                 <img src="assets/image/flag/sa.svg" alt="flag">
                                             </div>
                                             <!-- text -->
-                                            <p class="language_text">Arabic</p>
+                                            <p class="language_text">SAR</p>
                                         </li>
+
                                     </ul>
                                 </div>
                             </div>

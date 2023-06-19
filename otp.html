@@ -802,52 +802,31 @@
                             <div class="form__logo">
                                 <img src="assets/image/logo.png" alt="">
                             </div>
-                            <!-- google login -->
-                            <a href="#" class="sign__google">
-                                <img src="assets/image/google.png" alt="">
-                                <span>Login With Google</span>
-                            </a>
-                            <!-- form devide or -->
-                            <p class="devide__or">
-                                <span>OR</span>
-                            </p>
                             <!-- form ttile -->
-                            <h2 class="main__form_title">Sign In</h2>
+                            <h2 class="main__form_title">Enter OTP</h2>
                             <!-- input inner -->
                             <div class="main__form_inputinner">
-                                <label for="email" class="input__title">Email</label>
-                                <div class="input__group">
-                                    <span class="input__group_icon"><i class="fa-solid fa-envelope"></i></span>
-                                    <input type="email" class="input__control" placeholder="example@gmail.com" id="email">
-                                </div>
-                            </div>
-                            <!-- input inner -->
-                            <div class="main__form_inputinner">
-                                <label for="email" class="input__title">Password</label>
-                                <div class="input__group">
-                                    <span class="input__group_icon"><i class="fa-solid fa-lock"></i></span>
-                                    <input type="password" class="input__control" placeholder="xDue4WExample" id="email">
+                                <label for="email" class="input__title">OTP</label>
+                                <div class="otp_input">
+                                    <input type="number" placeholder="0" aria-label="first digit" />
+                                    <input type="number" placeholder="0" aria-label="second digit" />
+                                    <input type="number" placeholder="0" aria-label="third digit" />
+                                    <input type="number" placeholder="0" aria-label="fourth digit" />
                                 </div>
                             </div>
 
                             <!-- input inner -->
                             <div class="main__form_inputinner text-end">
-                                <a href="./forgot.html" class="forgot__password">Forgot Password?</a>
+                                <a href="./forgot.html" class="forgot__password">Resend OTP</a>
                             </div>
                             
                             <!-- input inner -->
                             <div class="main__form_inputinner">
                                 <!-- submit btn -->
                                 <div class="form__submitbtn">
-                                    <button class="main_btn hover_btn w-100">Sign In</button>
+                                    <button class="main_btn hover_btn w-100">Reset</button>
                                 </div>
                             </div>
-                            
-                            <!-- input inner -->
-                            <div class="main__form_inputinner">
-                                <p class="main__form_text">Don't have an Account? <a href="./signup.html" class="main__form_link">Sign Up</a></p> 
-                            </div>
-                            
                         </form>
                     </div>
                 </div>
@@ -976,6 +955,8 @@
         <script src="assets/js/slick.min.js"></script>
         <!-- magnific popup -->
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- otp -->
+        <script src="assets/js/otp.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
     </body>

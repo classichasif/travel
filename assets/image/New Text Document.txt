@@ -1,0 +1,53 @@
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/french.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">France</p>
+                                        </li>
+
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/germany.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Germany</p>
+                                        </li>
+
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/italy.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Italy</p>
+                                        </li>
+
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/russia.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Russia</p>
+                                        </li>
+
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/spain.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Spain</p>
+                                        </li>
+
+                                        <li class="d-flex align-items-center gap-3 px-2 py-1">
+                                            <!-- flag -->
+                                            <div class="language_flag">
+                                                <img src="assets/image/flag/sa.svg" alt="flag">
+                                            </div>
+                                            <!-- text -->
+                                            <p class="language_text">Arabic</p>
+                                        </li>
