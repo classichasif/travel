@@ -102,6 +102,7 @@ $('.video_popup').magnificPopup({
   type: 'iframe'
 });
 
+
 //   socket year
 let socketYear = document.getElementById("socket_year")
 let PresentYear = (year) =>{

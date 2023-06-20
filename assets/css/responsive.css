@@ -77,6 +77,11 @@
     .contact_wrapper {
         margin-top: -140px;
     }
+
+    .gallery__item{
+        width: calc(50% - 6px);
+    }
+
 }
 /* 768 */
 @media(min-width: 767px){
@@ -118,13 +123,20 @@
         border-radius: 12px 0px 0px 12px;
     }
 
+    .gallery__item{
+        width: calc(33.33% - 8px);
+    }
+
 }
 /* 1024 */
 @media(min-width: 992px){
-    .main{
-        margin-top: 133px;
+    .main {
+        margin-top: 124px;
     }
 
+    .main-footer {
+        margin-bottom: 0px;
+    }
     .contact_location ul li{
         flex-direction: row;
     }
@@ -214,10 +226,23 @@
     .tourgrid_wrapper .package_item{
         width: calc(50% - 12px);
     }
+    
+    .gallery__item {
+        width: calc(25% - 9px);
+    }
 }
 
 /* 1240 */
 @media(min-width: 1200px){
+
+    .gallery__wrapper{
+        gap: 24px;
+    }
+    
+    .gallery__item{
+        width: calc(25% - 18px);
+    }
+
     .section_padding{
         padding: 60px 0px;
     }
