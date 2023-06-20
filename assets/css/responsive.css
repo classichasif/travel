@@ -46,6 +46,37 @@
     .model-gallery-image .all-item-slider {
         margin-top: -6px;
     }
+
+    .contact_location ul li{
+        flex-direction: row;
+    }
+    
+    .contact_info_text {
+        width: calc(100% - 74px);
+    }
+
+    .contact_information h3{
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+    .contact_location ul li:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .contact_wrapper .main__form_content {
+        padding: 30px 20px;
+        margin: 0px;
+    }
+
+    .contact_wrapper {
+        padding: 30px;
+    }
+    .contact_left {
+        padding: 30px;
+    }
+    .contact_wrapper {
+        margin-top: -140px;
+    }
 }
 /* 768 */
 @media(min-width: 767px){
@@ -75,11 +106,31 @@
         margin: 5px 0px;
     }
 
+    .contact_location ul li{
+        flex-direction: column;
+    }
+    
+    .contact_info_text {
+        width: 100%;
+    }
+
+    .contact_left {
+        border-radius: 12px 0px 0px 12px;
+    }
+
 }
 /* 1024 */
 @media(min-width: 992px){
     .main{
         margin-top: 133px;
+    }
+
+    .contact_location ul li{
+        flex-direction: row;
+    }
+    
+    .contact_info_text {
+        width: calc(100% - 74px);
     }
 
     .bottom_nav{
@@ -188,6 +239,10 @@
 
     .tourgrid_wrapper .package_item{
         width: calc(33.33% - 18px);
+    }
+
+    .contact__banner {
+        height: 400px;
     }
 }
 

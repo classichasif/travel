@@ -2228,6 +2228,16 @@ a.dropdown_button.active {
     background: transparent;
 }
 
+.textare__control{
+    height: auto !important;
+}
+
+.textare__control textarea{
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+}
+
 .input__control::placeholder{
     color: #5652525c;
 }
@@ -2298,7 +2308,7 @@ a.dropdown_button.active {
 /* contact page */
 
 .contact__banner {
-    height: 400px;
+    height: 320px;
     display: flex;
     align-items: center;
     background: url(../image/contact.png);
@@ -2327,12 +2337,16 @@ a.dropdown_button.active {
     margin-top: -100px;
 }
 
-.contact_wrapper{
-    padding: 30px;
+.contact_main{
+    padding-bottom: 60px;
+}
+
+.contact_wrapper {
+    padding: 20px;
     background: var(--global-color);
     box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
     border-radius: 12px;
-    margin-top: -100px;
+    margin-top: -110px;
     position: relative;
     z-index: 1;
 }
@@ -2341,10 +2355,95 @@ a.dropdown_button.active {
     max-width: 100%;
     border: none;
     box-shadow: none;
+    padding: 0px;
+    padding-top: 40px;
 }
 
 .contact_left {
-    padding: 30px;
+    padding: 20px;
     background: var(--main-color);
-    border-radius: 12px 0px 0px 12px;
+    border-radius: 12px;
+}
+
+.contact_information h3 {
+    font-size: 18px;
+    color: var(--global-color);
+    margin-bottom: 20px;
+}
+
+.contact_location_icon {
+    width: 50px;
+    height: 50px;
+    background: rgb(255 255 255 / 30%);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--bg-color);
+}
+
+.contact_location ul li{
+    display: flex;
+    gap: 12px 24px;
+    flex-direction: column;
+}
+
+.contact_location ul li:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.contact_info_text {
+    width: 100%;
+}
+
+.contact_info_text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--global-color);
+}
+
+.contact_info_text a {
+    font-size: 15px;
+    color: var(--global-color);
+}
+
+.main__form_input_wrapper{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.input__item{
+    width: 100%;
+}
+
+/* query form */
+
+.query__form{}
+
+.query__form_wrapper{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.query__input_inner{
+    width: calc(33.33% - 16px);
+}
+
+.query__textarea_inner{
+    width: 100%;
+}
+
+.query__input_inner .input__control{
+    width: 100%;
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+.nested__input_inner{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
