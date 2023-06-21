@@ -58,19 +58,59 @@ $(function (e){
   });
 })
 
+// offer
 $(function (e) {
   "use strict";
   e(".offer_slider").slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       focusOnSelect: !0,
-      dots: true,
+      dots: false,
       autoplay: !1,
       autoplaySpeed: 5e3,
       swipe: true,
       swipeToSlide: true,
-      appendDots: e(".slider_dots"),
+      appendArrows: e(".slideroffer_arrow"),
+      responsive: [{
+          breakpoint: 1200,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 3,
+          }
+      },
+      {
+          breakpoint: 766,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 2,
+          }
+      },
+      {
+          breakpoint: 576,
+          settings: {
+              autoplay: !1,
+              slidesToShow: 1,
+          }
+      }
+    ]
+  })
+});
+
+// combo
+$(function (e) {
+  "use strict";
+  e(".combo_offer_slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      focusOnSelect: !0,
+      dots: false,
+      autoplay: !1,
+      autoplaySpeed: 5e3,
+      swipe: true,
+      swipeToSlide: true,
+      appendArrows: e(".slider_arrow"),
       responsive: [{
           breakpoint: 1200,
           settings: {

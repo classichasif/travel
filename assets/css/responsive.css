@@ -82,6 +82,15 @@
         width: calc(50% - 6px);
     }
 
+    .section_title_text{
+        font-size: 28px;
+    }
+
+    .banner_heading {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
 }
 /* 768 */
 @media(min-width: 767px){
@@ -125,6 +134,18 @@
 
     .gallery__item{
         width: calc(33.33% - 8px);
+    }
+
+    .section_title_text{
+        font-size: 32px;
+    }
+    .banner_heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .testimonial-one__quote {
+        font-size: 18px;
     }
 
 }
@@ -229,6 +250,14 @@
     
     .gallery__item {
         width: calc(25% - 9px);
+    }
+
+    .section_title_text {
+        font-size: 42px;
+    }
+    .banner_heading {
+        font-size: 42px;
+        line-height: 52px;
     }
 }
 
